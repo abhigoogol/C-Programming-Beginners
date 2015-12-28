@@ -1,0 +1,28 @@
+How to run two files?
+1. multiplesource.c
+2. addNumber.c
+
+multiplesource.c has the function addNumber which is present in an another file
+addNumber.c.
+
+So, we want to compile both the files one by one and create the object file.
+Then, we will create the final executable file from the object files.
+
+
+$ gcc -c multiplesource.c
+$ gcc -c addNumber.c
+$ ls
+multisource.c multiplesource.o addNumber.c addNumber.o
+$ gcc multiplesource.o addNumber.o -o multisrc
+$ ./multisrc
+The sum of two numbers is: 9
+
+OR (shortform)
+
+$ gcc multiplesource.c addNumbers.c -o multisrc
+$ ./multisrc
+The sum of two numbers is: 9
+
+
+
+Where multisrc is an executable file.
