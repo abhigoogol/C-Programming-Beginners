@@ -18,7 +18,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <pthread.h>	// Library for pthread
+#include <pthread.h>	// Library for pthread. See man pthread_create
 
 void *speed_func();
 void *speed_func1();
